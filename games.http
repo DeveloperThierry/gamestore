@@ -34,3 +34,21 @@ Content-Type: application/json
 
 ### DeleteGame
 DELETE http://localhost:5053/games/1
+
+
+
+### GameNotFound
+GET http://localhost:5053/games/100
+
+
+
+### NotFOund UpdateGame
+PUT http://localhost:5053/games/100
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genre": "Fighting",
+    "price": 19.99,
+    "releaseDate": "1992-07-15"
+}
