@@ -15,10 +15,8 @@ namespace app.Endpoints
     public static void MapGamesEndpoints(this WebApplication app){
         var group = app.MapGroup("/games");
         
-// GET /
-group.MapGet("/", () => "Connected to Gamestore API");
 // GET /games
-group.MapGet("", () => games);
+group.MapGet("/", () => games);
 // GET /games/{id}
 group.MapGet("/{id}", (int id) => { 
     var game = games.Find(game => game.Id == id); 

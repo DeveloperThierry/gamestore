@@ -8,4 +8,11 @@
   packages = [
     pkgs.dotnet-sdk_10
   ];
+
+  idx = {
+    extensions = [
+      "ms-dotnettools.csharp"
+      "ms-dotnettools.csdevkit"
+    ];
+  };
 }
