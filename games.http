@@ -36,6 +36,10 @@ Content-Type: application/json
 DELETE http://localhost:5053/games/3
 
 
+### GetGenres
+GET http://localhost:5053/genres
+
+
 
 ### GameNotFound
 GET http://localhost:5053/games/100
